@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lezione HTML</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      html{
+        font-size: 10px;
+      }
+
+      body{
+        background-color: #eee;
+      }
+
+      #navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 9.5vh;
+        padding: 2rem 4rem;
+        background-color: #212529;
+      }
+
+      #navbar .container-left{
+        display: flex;
+        align-items: center;
+      }
+
+      #navbar .container-left h1 a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 3.5rem;
+        font-weight: lighter;
+        margin: 0 2rem 0 0;
+      }
+
+      #navbar .container-left ul{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+      }
+
+      #navbar .container-left ul li{
+        list-style: none;
+      }
+
+      #navbar .container-left ul li select{
+        border: none;
+        background-color: #212529;
+        color: #fff;
+        font-size: 3rem;
+        margin: 0 2rem;
+      }
+
+      #navbar .container-left ul li a{
+        font-size: 3rem;
+        padding: 0 2rem;
+        text-decoration: none;
+        color: #fff;
+        margin: 0 2rem;
+      }
+
+      #navbar .container-left ul li:last-child a{
+        color: #9b9d9f;
+        pointer-events: none;
+      }
+
+      #navbar .container-left h1 a:hover,
+      #navbar .container-left ul li select:hover,
+      #navbar .container-left ul li a:hover {
+        color: #9b9d9f;
+        transition: 0.2s ease-in;
+      }
+
+      #navbar .container-right {
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+      }
+
+      #navbar .container-right input{
+        padding: 0.5rem 1rem;
+        margin: 0 2rem;
+        width: 40rem;
+        height: 5.5rem;
+        border-radius: 8px;
+        font-size: 2rem;
+      }
+      #navbar .container-right button {
+        width: 12rem;
+        height: 5.5rem;
+        background-color: transparent;
+        border: 2px solid #1d9c61;
+        border-radius: 8px;
+        color: #1d9c61;
+        font-size: 2rem;
+      }
+
+      #navbar .container-right button:hover{
+        background-color: #1d9c61;
+        color: #fff;
+        transition: 0.2s ease-in;
+      }
+    </style>
+
+  </head>
+  <body>
+    <!--GENERIC NAVBAR -->
+    <header>
+      <nav id="navbar">
+        <div class="container-left">
+          <h1 class="logo"><a href="navbar-v1.html">Navbar</a></h1>
+          <ul>
+            <li><a class="current" href="navbar-v1.html">Home</a></li>
+            <li><a href="#">Link</a></li>
+            <li>
+              <select name="select" id="select">
+                <option value="" disabled selected>Dropdown</option>
+                <option value="">Frist option</option>
+              </select>
+            </li>
+            <li><a href="#">Disable</a></li>
+          </ul>
+        </div>
+        <div class="container-right">
+          <input type="search" id="site-search" placeholder="Search" />
+          <button>Search</button>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
